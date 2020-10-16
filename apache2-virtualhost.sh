@@ -25,6 +25,7 @@ printf "
 </VirtualHost>
 " >> /etc/apache2/sites-available/${INSTALL_DOMAIN}.conf
 
+a2ensite ${INSTALL_DOMAIN}.conf
 systemctl restart apache2
 
 #SELF DELETE AND EXIT
