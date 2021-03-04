@@ -14,7 +14,7 @@ fi
 INSTALL_PATH=$(realpath -s --canonicalize-missing $INSTALL_PATH)
 
 #apache2 add virtual host
-touch /etc/apache2/sites-available/${DOMAIN_NAME}
+touch /etc/apache2/sites-available/${DOMAIN_NAME}.conf
 
 printf "
 <VirtualHost *:80>
