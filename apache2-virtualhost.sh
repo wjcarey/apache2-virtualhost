@@ -28,7 +28,7 @@ printf "
 " >> /etc/apache2/sites-available/${DOMAIN_NAME}.conf
 
 a2ensite ${INSTALL_DOMAIN}.conf
-22dissite 000-default.conf
+a2dissite 000-default.conf
 systemctl restart apache2
 
 #SELF DELETE AND EXIT
